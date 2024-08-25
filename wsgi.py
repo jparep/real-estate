@@ -1,4 +1,6 @@
+import os
 from app import create_app
 
-# Specify the environment configuration
-app = create_app('production')
+# Determine hte environment from an environment variable, with 'production' as the default
+app = os.getenv('FLASK_CONFIG', 'production')
+app = create_app(config_name)
