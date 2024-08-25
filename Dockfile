@@ -1,0 +1,1 @@
+ENV FLASK_CONFIG=production
