@@ -1,7 +1,8 @@
 import pickle
 
 # Load the pre-trained model from the file
-model = pickle.load('models/house_price_model.pkl')
+with open('models/model.pkl', 'rb') as model_file:
+    model = pickle.load(model_file)
 
 def predict_price(features):
     """Predict the house price based on the input features."""
