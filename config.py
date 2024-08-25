@@ -1,3 +1,6 @@
+import os
+from dotenv import load_dotenv
+
 class Config:
-    SECRET_KEY = 'SECRET_KEY'
-    MODEL_PATH = 'models/model.joblib'
+    SECRET_KEY = os.getenv('SECRET_KEY', 'defualt_secret_key')
+    MODEL_PATH = os.getenv('MODEL_PATH', 'models/model.joblib')
