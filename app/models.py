@@ -1,7 +1,7 @@
-import joblib
+import pickle
 
 # Load the pre-trained model from the file
-model = joblib.load('models/house_price_model.pkl')
+model = pickle.load('models/house_price_model.pkl')
 
 def predict_price(features):
     """Predict the house price based on the input features."""
