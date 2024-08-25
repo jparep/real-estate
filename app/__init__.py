@@ -1,7 +1,12 @@
+import os
+from dotenv import load_dotenv
 from flask import Flask
 from config import Config
 
-def create_app(config_name='defualt'):
+def create_app(config_name=None):
+    if config_name is None:
+        config_name  = os.getenv('FLASK_ENV', 'development')
+        
     app= Flask(__name__)
     
     # Load the appropriate configuration
