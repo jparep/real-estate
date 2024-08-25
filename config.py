@@ -2,27 +2,28 @@ import os
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
+load_dotenv()
 
 class Config:
     SECRET_KEY = os.getenv('SECRET_KEY')
     MODEL_PATH = os.getenv('MODEL_PATH', 'models/model.joblib')
 
-@staticmethod
-def init_app(app):
-    """Initialize the app with additional configurations.""" 
-    pass
+    @staticmethod
+    def init_app(app):
+        """Initialize the app with additional configurations.""" 
+        pass
 
 class DevelopmentConfig(Config):
-    DEBUG=True
-    FLASK_ENV='development'
+    DEBUG = True
+    FLASK_ENV = 'development'
 
 class ProductionConfig(Config):
-    DEBUG=False
+    DEBUG = False
     FLASK_ENV = 'production'
 
-# Dictionary to map environment  to respective config class
+# Dictionary to map environment to respective config class
 config = {
     'development': DevelopmentConfig,
     'production': ProductionConfig,
-    'defualt': DevelopmentConfig
+    'default': DevelopmentConfig
 }
