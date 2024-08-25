@@ -10,7 +10,7 @@ class Config:
 
     @staticmethod
     def init_app(app):
-        """Initialize the app with additional configurations.""" 
+        """Initialize the app with additional configurations."""
         pass
 
 class DevelopmentConfig(Config):
