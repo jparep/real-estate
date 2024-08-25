@@ -1,3 +1,3 @@
 class Config:
-    SECRET_KEY = 'your_secreste_key'
+    SECRET_KEY = 'SECRET_KEY'
     MODEL_PATH = 'models/model.joblib'
