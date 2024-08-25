@@ -1,7 +1,9 @@
 import os
 from dotenv import load_dotenv
 from flask import Flask
-from config import config  # This should refer to the `config` dictionary, not `Config`
+from config import config
+
+load_dotenv()
 
 def create_app(config_name=None):
     if config_name is None:
