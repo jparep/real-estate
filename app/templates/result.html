@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet">
+    <title>Prediction Result</title>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-10">
+        <h1 class="text-3xl font-bold text-center mb-5">Predicted House Price</h1>
+        <div class="text-center text-2xl">
+            <p>The estimated price is: <strong>${{ prediction }}</strong></p>
+        </div>
+        <div class="text-center mt-5">
+            <a href="/" class="text-blue-500">Predict another house</a>
+        </div>
+    </div>
+</body>
+</html>
