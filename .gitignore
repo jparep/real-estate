@@ -1,47 +1,63 @@
-# Python
+# Byte-compiled / optimized / DLL files
 *.pyc
 *.pyo
 *.pyd
 __pycache__/
-*.env
-*.venv
+*.so
+
+# Environment variables
+.env
+.env.*
+
+# Virtual Environment
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
 .Python
+
+# Python-specific
 .pytest_cache/
 pytest_cache/
-instance/
+*.egg
+*.egg-info/
+.installed.cfg
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Unit test / coverage reports
+.coverage
+htmlcov/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.tox/
+.nox/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+Desktop.ini
 
 # Flask
 instance/
 webapp/*.db
-*.sqlite3
-
-# Tailwind CSS
-node_modules/
-*.css.map
-*.css.tmp
-
-# Environment variables
-.env
-.env.*
-
-# Docker
-*.log
-docker-compose.override.yml
-docker-compose.override.yml
-docker-compose.override.yml.bak
-
-# Virtual Environment
-venv/
-env/
-ENV/
 
 # Distribution / packaging
-.Python
 build/
 develop-eggs/
 dist/
@@ -54,69 +70,16 @@ parts/
 sdist/
 var/
 wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Byte-compiled / optimized / DLL files
-*.pyc
-*.pyo
-*.pyd
-__pycache__/
-*.so
-
-# Logs and databases
-*.log
-*.sqlite3
-
-# Test logs and coverage reports
-.coverage
-htmlcov/
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
-
-# Django stuff:
-*.mo
-*.pot
-
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
-nosetests.xml
-coverage.xml
-*.egg
-*.egg-info/
-.installed.cfg
-*.egg
 MANIFEST
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+# Docker
+docker-compose.override.yml
+docker-compose.override.yml.bak
+
+# Tailwind CSS
+node_modules/
+*.css.map
+*.css.tmp
 
 # Editor directories and files
 .vscode/
@@ -124,20 +87,14 @@ venv.bak/
 *.sublime-project
 *.sublime-workspace
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-# macOS
-.DS_Store
+# PyInstaller
+*.manifest
+*.spec
 
-# Linux
-*~
-
-# Windows
-Thumbs.db
-Desktop.ini
-
-# Docker
-*.log
-docker-compose.override.yml
-docker-compose.override.yml.bak
+# Django stuff:
+*.mo
+*.pot

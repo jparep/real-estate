@@ -1,0 +1,19 @@
+name: re-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12.4
+  - flask=3.0.3
+  - flask-migrate=4.0.7
+  - flask-sqlalchemy=3.1.1
+  - sqlalchemy=2.0.30
+  - python-dotenv=1.0.1
+  - scikit-learn=1.5.1
+  - scipy=1.13.1
+  - numpy=1.26.4
+  - joblib=1.4.2
+  - threadpoolctl=3.5.0
+  - pip
+  - wheel
+  - setuptools
