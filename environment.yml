@@ -17,3 +17,4 @@ dependencies:
   - pip
   - wheel
   - setuptools
+  - gunicorn==23.0.0
