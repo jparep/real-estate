@@ -98,3 +98,13 @@ pip-delete-this-directory.txt
 # Django stuff:
 *.mo
 *.pot
+
+######################
+# Dockerfile
+# Ignore Docker-related artifacts
+*.log
+*.pid
+*.sock
+.env
+docker-compose.override.yml
+#######END#############
